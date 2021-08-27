@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Wealth</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.0.0/nouislider.min.css
+    ">
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: "Suisse-Intl";
+            src: url("fonts/SuisseIntl-Regular.woff2");
+            font-weight: 400;
+        }
+        @font-face {
+            font-display: swap;
+            font-family: "Suisse-Intl";
+            src: url("fonts/SuisseBPIntl-Bold.woff2");
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__logo-and-menu">
+                        <a href="index.html" class="header__logo"><img class="logo__img" src="images/logo.svg"
+                                alt=""></a>
+                        <div class="header__menu-icon-outer">
+                            <div class="header__menu-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="how-to.html">How to start</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="about.html">About Us</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="fees.html">Fees</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__log">
+                        <button class="header__sign">Sign In</button>
+                        <button class="header__reg">Registration</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__inner">
+                        <div class="banner__left">
+                            <div class="banner__img-outer">
+                                <img src="images/banner/suptitle.svg" alt="" class="banner__suptitle">
+                            </div>
+                            <h5 class="banner__title">
+                                Swiss<br>
+                                digitalized asset<br>
+                                management<br>
+                                services
+                            </h5>
+                            <p class="banner__subtitle">
+                                Simplewealth makes investment easy, with our professional automated investment service.
+                            </p>
+                        </div>
+                        <div class="slide__left">
+                            <div class="slide__left-title">
+                                How your assets can<br>
+                                grow?
+                            </div>
+
+                            <div class="banner__range">
+                                <div class="banner__range-outer outer-one">
+                                    <div class="banner__range-outer-top">
+                                        <p class="banner__range-name">Starting amount</p>
+                                        <p class="banner__range-value"><span id='valueOne'>100 000</span> CHF</p>
+                                    </div>
+                                    <span class='bar barOne'><span class="fill fillOne"></span></span>
+                                    <input type="range" min="1" max="100" value="1" id='myRangeOne' 
+                                        class="banner__range-input">
+                                </div>
+                                <div class="banner__range-outer outer-two">
+                                    <div class="banner__range-outer-top">
+                                        <p class="banner__range-name">Monthly deposit</p>
+                                        <p class="banner__range-value"><span id='valueTwo'>250</span> CHF</p>
+                                    </div>
+                                    <span class='bar barTwo'><span class="fill fillTwo"></span></span>
+                                    <input type="range" min="1" max="100" value="1" id='myRangeTwo'
+                                        class="banner__range-input">
+                                </div>
+                                <div class="banner__range-outer">
+                                    <div class="banner__range-outer-top">
+                                        <p class="banner__range-name">Risk level</p>
+                                        <p class="banner__range-value">MID</p>
+                                    </div>
+                                    <input type="range" min="1" max="100" value="50" id='myRangeThree'
+                                        class="banner__range-input">
+                                </div>
+                            </div>
+
+                            <a href="#" class="slide__link">Get the forecast <img src="images/arrow-next.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="tablet__container">
+                <img class="tablet__absolute" src="images/tablet.svg" alt="tablet">
+            </div>
+
+            <section class="what">
+                <div class="container">
+                    <div class="what__inner">
+                        <div class="what__left">
+                            <a href="#" class="what__store">
+                                <svg class="what__store-svg">
+                                    <use xlink:href="images/sprite.svg#appstore"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="what__store">
+                                <svg class="what__store-svg">
+                                    <use xlink:href="images/sprite.svg#googleplay"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="what__right">
+                            <h4 class="what__title">
+                                What we're doing as<br>
+                                Robo-advisor
+                            </h4>
+                            <div class="what__cards">
+                                <div class="what__card what__cardOne">
+                                    <div class="what__card-inner innerOne">
+                                        <div class="what__card-img-outer">
+                                            <img class="what__card-img" src="images/what/card1.svg" alt="">
+                                        </div>
+                                        <div class="what__text">
+                                            Low-cost investing portfolios built and managed based on your priorities
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="what__card what__cardTwo">
+                                    <div class="what__card-inner innerTwo">
+                                        <div class="what__card-img-outer">
+                                            <img class="what__card-img" src="images/what/card2.svg" alt="">
+                                        </div>
+                                        <div class="what__text">
+                                            Instead of waiting, hour-long meetings, and liters of tea or coffee, you can
+                                            build up a personal securities portfolio and evaluate its perspectives
+                                            absolutely confidentially.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="what__card what__cardTh">
+                                    <div class="what__card-inner innerTh">
+                                        <div class="what__card-img-outer">
+                                            <img class="what__card-img" src="images/what/card3.svg" alt="">
+                                        </div>
+                                        <div class="what__text">
+                                            We have been developing and improving our mathematical models since 2015.
+                                            This allows us to preserve and grow client assets.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="what__link">Create personal investment portfolio <img
+                                    src="images/arrow-next.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="american">
+                <div class="container">
+                    <div class="american__inner">
+                        <h4 class="american__title">
+                            Americans & Europeans<br>
+                            are welcome!
+                        </h4>
+                        <div class="american__subtitle">
+                            We also work with citizens of the European Union and even with citizens of America, if they
+                            are registered in Switzerland and have tax residency.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="have">
+                <div class="container">
+                    <div class="have__inner">
+                        <div class="have__left">
+                            <h5 class="have__title">
+                                Have you
+                                already invested
+                                before?
+                            </h5>
+                        </div>
+                        <div class="have__right">
+                            <p class="have__suptext">
+                                Then we not only save you time. Portfolio creation, the ability to select a more risky
+                                profile, rebalancing and much more for just:
+                            </p>
+
+                            <div class="have__cards">
+                                <div class="have__card have__cardOne">
+                                    <div class="have__card-inner have__card-innerOne">
+                                        <div class="have__card-img-outer">
+                                            <img class="have__card-img" src="images/have/prev.svg" alt="">
+                                        </div>
+                                        <p class="have__card-text">
+                                            For accounts of CHF 50'000 to more our fee is 0.5% per year! This 0.5%
+                                            annual fee is based on the value of your account and is charged monthly.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="have__card have__cardTwo">
+                                    <div class="have__card-inner have__card-innerTwo">
+                                        <div class="have__card-img-outer">
+                                            <img class="have__card-img itemTwo" src="images/have/prev.svg" alt="">
+                                        </div>
+                                        <p class="have__card-text">
+                                            For accounts under CHF 50’000 our fee is CHF 20 per month and your first
+                                            calendar month is free. Minimum account level is CHF 10’000.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="have__subtext">
+                                We do not charge you additional trading fees, commissions, performance fees,
+                                administration fees, entry or exit fees! All your investments are insured. Up to
+                                USD500’000
+                            </p>
+
+                            <a href="#" class="have__link">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fees">
+                <div class="container">
+                    <div class="fees__inner">
+                        <div class="fees__left">
+                            <h3 class="fees__title">
+                                Our fees include
+                            </h3>
+                            <img class="fees__img" src="images/fees/fixed-img.svg" alt="">
+                        </div>
+                        <div class="fees__right">
+                            <div class="fees__cards">
+                                <div class="fees__card fees__cardOne">
+                                    <div class="fees__card-inner fees__card-innerOne">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card1.svg" alt="">
+                                        </div>
+                                        <p class="fees__card-text">
+                                            Low-cost investing portfolios built and managed based on your priorities
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="fees__card fees__cardTwo">
+                                    <div class="fees__card-inner fees__card-innerTwo">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card2.svg" alt="">
+                                        </div>
+                                        <p class="fees__card-text">
+                                            Automatic features like portfolio rebalancing, dividend reinvestment, and
+                                            auto-adjust
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="fees__card fees__cardTh">
+                                    <div class="fees__card-inner fees__card-innerTh">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card3.svg" alt="">
+                                        </div>
+                                        <p class="fees__card-text">
+                                            Option to invest in socially responsible business
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="fees__card fees__cardFr">
+                                    <div class="fees__card-inner fees__card-innerFr">
+                                        <div class="fees__card-img-outer">
+                                            <img class="fees__card-img" src="images/fees/card4.svg" alt="">
+                                        </div>
+                                        <p class="fees__card-text">
+                                            All onboarding and AML procedures
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how">
+                <div class="container">
+                    <div class="how__inner">
+                        <div class="how__fixed">
+                            <h2 class="how__fixed-title">
+                                How to start invest<br>
+                                with us
+                            </h2>
+                            <img class="how__fixed-img" src="images/how/fixed-img.webp" alt="image">
+                        </div>
+                        <div class="how__scrollable">
+                            <div class="how__scrollable-step stepOne">
+                                <div class="how__scrollable-num">Step 01</div>
+                                <p class="how__scrollable-title">Registartion</p>
+                                <p class="how__scrollable-text">
+                                    The second part is the survey itself. We will ask 10-15 questions online
+                                    about you, your life, goals and finances.
+                                </p>
+                                <a href="#" class="how__scrollable-link">Go to Registration <img
+                                        src="images/arrow-next.svg" alt=""></a>
+                            </div>
+
+                            <div class="how__scrollable-step stepTwo">
+                                <div class="how__scrollable-num">Step 02</div>
+                                <p class="how__scrollable-title">Verification</p>
+                                <p class="how__scrollable-text">
+                                    Complete the online verification. You will see a pop-up window — take a picture of
+                                    the QR code and
+                                    take a selfie + upload your utility bill or any document with your address
+                                    confirmation. It is also a
+                                    requirement by law and our financial regulator (FINMA).
+                                </p>
+                                <a href="#" class="how__scrollable-link">Start now <img src="images/arrow-next.svg"
+                                        alt=""></a>
+                            </div>
+
+                            <div class="how__scrollable-step stepThree">
+                                <div class="how__scrollable-num">Step 03</div>
+                                <p class="how__scrollable-title">Get a preview</p>
+                                <p class="how__scrollable-text">
+                                    To understand your goals, investment expectations and investment horizon, we ask you
+                                    to answer roughly
+                                    15 questions. Answers are used by our unique algorithm that calculates the risks and
+                                    gives you an
+                                    approximate investment outcome.
+                                </p>
+                                <p class="how__scrollable-text">
+                                    The questionnaire may feel long and too personal to you, but at the end, our team
+                                    can view only the
+                                    result - the calculated risk level (1-2-3-4-5). It is all without any human
+                                    involvement.
+                                </p>
+                                <p class="how__scrollable-text">
+                                    You can also change this level by yourself and get more risk and potentially more
+                                    return.
+                                </p>
+                                <a href="#" class="how__scrollable-link">Try now <img src="images/arrow-next.svg"
+                                        alt=""></a>
+                            </div>
+
+                            <div class="how__scrollable-step stepFour">
+                                <div class="how__scrollable-num">Step 04</div>
+                                <p class="how__scrollable-title">Consent to the terms and conditions</p>
+                                <p class="how__scrollable-text">
+                                    At the end, you need to agree to the terms of service and the contract's digital
+                                    version.
+                                </p>
+                                <p class="how__scrollable-text">
+                                    What happens then? <br>
+                                    The data we have collected will be sent to our Swiss Custody bank to open an
+                                    account.
+                                </p>
+                                <p class="how__scrollable-text">The account will be opened under your name, and you will
+                                    also receive
+                                    access by separate email directly from the bankers.
+                                </p>
+                                <a href="#" class="how__scrollable-link">Get start <img src="images/arrow-next.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="completely">
+                <div class="container">
+                    <div class="completely__inner">
+                        <div class="completely__left">
+                            <h4 class="completely__title">
+                                Completely safe
+                                & confidential
+                            </h4>
+                            <img class="completely__img" src="images/completely/fixed-img.svg" alt="">
+                        </div>
+                        <div class="completely__right">
+                            <div class="completely__cards">
+                                <div class="completely__card completely__cardOne">
+                                    <div class="completely__card-inner completely__card-innerOne">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card1.svg" alt="">
+                                        </div>
+                                        <p class="completely__card-text">
+                                            You are the only one who can deposit and withdrawal funds from your account.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completely__card completely__cardTwo">
+                                    <div class="completely__card-inner completely__card-innerTwo">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card2.svg" alt="">
+                                        </div>
+                                        <p class="completely__card-text">
+                                            Your money is held in a custodial account in your name and belongs to you at
+                                            all
+                                            times.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completely__card completely__cardTh">
+                                    <div class="completely__card-inner completely__card-innerTh">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card3.svg" alt="">
+                                        </div>
+                                        <p class="completely__card-text">
+                                            You will hold low-cost ETFs which track the market. You won’t be taking bets
+                                            on
+                                            single companies.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completely__card completely__cardFr">
+                                    <div class="completely__card-inner completely__card-innerFr">
+                                        <div class="completely__card-img-outer">
+                                            <img class="completely__card-img" src="images/completely/card4.svg" alt="">
+                                        </div>
+                                        <p class="completely__card-text">
+                                            All your data is stored in Switzerland, governed by Swiss law.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="partners__inner">
+                    <h4 class="partners__title">
+                        We are in the rankings and reviews of specialized media:
+                    </h4>
+                    <div class="partners__blocks">
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item1.png" alt="partner">
+                        </div>
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item2.png" alt="partner">
+                        </div>
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item3.png" alt="partner">
+                        </div>
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item4.png" alt="partner">
+                        </div>
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item5.png" alt="partner">
+                        </div>
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item6.png" alt="partner">
+                        </div>
+                        <div class="partners__block">
+                            <img class="partners__block-img" src="images/partners/item7.png" alt="partner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="insights">
+                <div class="container">
+                    <div class="insights__inner">
+                        <div class="insights__header">
+                            <h4 class="insights__title">May also be of interest</h4>
+                            <a href="#" class="insights__link">See all Insights</a>
+                        </div>
+                        <div class="insights__card-outer">
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide1.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide2.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide3.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide1.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide4.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide1.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide5.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide1.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide1.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="insights__card">
+                                <a href="blog.html" class="insights__card-img-outer">
+                                    <img src="images/insights/slide1.jpg" alt="1" class="insights__card-img">
+                                </a>
+                                <div class="insights__card-info">
+                                    <div class="insights__card-title-time">
+                                        <a href="#" class="insights__card-title">Finance</a>
+                                        <div class="insights__card-time">14 september</div>
+                                    </div>
+                                    <a href='blog.html' class="insights__card-text">
+                                        How To Hold Your Audience’s Attention By
+                                        Having A Conversation
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="insights__more">
+                            Load 8 more
+                        </button>
+                        <a class="insights__link mobile" href="#">See all Insights</a>
+                    </div>
+                </div>
+            </section>
+            <section class="get">
+                <div class="container">
+                    <div class="get__inner">
+                        <p class="get__suptitle">
+                            Not sure?
+                        </p>
+                        <h4 class="get__title">
+                            Get a free
+                            preview!
+                        </h4>
+                        <p class="get__text">
+                            Take just a few minutes, answer the questions in our questionnaire and get a personalised
+                            estimate for the
+                            next 10 years.
+                        </p>
+                        <p class="get__text">
+                            Our algorithm empowers you to create a portfolio based on your preferences and goals.
+                        </p>
+                        <a href="#" class="get__link">Try now</a>
+                    </div>
+                </div>
+                <div class="get__check">
+                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                        src="images/get/towebp.webp" alt="" class="get__check-bg">
+                    <img data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                        src="images/get/frame.webp" alt="" class="get__check-bg-m">
+                    <img data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                        src="images/get/screen-m-two.webp" alt="" class="get__check-bg-m-two">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__container">
+                    <div class="footer__top-inner">
+                        <div class="footer__navs">
+                            <h6 class="footer__title">Simple Wealth</h6>
+                            <div class="footer__nav-lists">
+                                <nav class="footer__nav">
+                                    <h6 class="footer__nav-title">Languages</h6>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">English</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">German</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="footer__nav">
+                                    <h6 class="footer__nav-title">Navigation</h6>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">How to start</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Our plans & pricing</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Media & Press</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">About Us</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Insights</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="footer__nav">
+                                    <h6 class="footer__nav-title">Social</h6>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Instagram</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Facebook</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Twitter</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Linkedin</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="footer__nav">
+                                    <h6 class="footer__nav-title">Documents</h6>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Privacy Policy</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Terms of use</a>
+                                        </li>
+                                        <li class="footer__nav-item">
+                                            <a href="#" class="footer__nav-link">Imprint</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <nav class="footer__nav footer__nav-buttons">
+                                <h6 class="footer__nav-title">Autorisation</h6>
+                                <ul class="footer__nav-list">
+                                    <li class="footer__nav-item">
+                                        <button class="footer__nav-button footer__nav-button-one">Sign In</button>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <button class="footer__nav-button footer__nav-button-two">Sign Up</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__info-store-with">
+                                <div class="footer__info-stories">
+                                    <a href="#" class="footer__info-store">
+                                        <svg class="footer__info-svg">
+                                            <use xlink:href="images/sprite.svg#appstore"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="footer__info-store">
+                                        <svg class="footer__info-svg">
+                                            <use xlink:href="images/sprite.svg#googleplay"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__info-with">
+                                    © Simplewealth AG 2015-2021. Made with ❤️ in beautiful
+                                    <img class='footer__info-with-img' src="images/footer/🇨🇭.png" alt="image">
+                                </div>
+                            </div>
+                            
+                            <div class="footer__info-texts">
+                                <div class="footer__info-logo-wrapper">
+                                    <div class="footer__info-logo-outer">
+                                        <img class="footer__info-logo" src="images/footer/VQF.png" alt="image">
+                                    </div>
+                                    <div class="footer__info-logo-outer">
+                                        <img class="footer__info-logo" src="images/footer/Finos.png" alt="image">
+                                    </div>
+                                    <div class="footer__info-logo-outer">
+                                        <img class="footer__info-logo" src="images/footer/Swiss.png" alt="image">
+                                    </div>
+                                </div>
+                                <p class="footer__info-text">
+                                    Investing in securities involves risks, and there is always the potential of losing
+                                    money when you
+                                    invest in securities. Before investing, consider your investment objectives and
+                                    Simplewealth AG
+                                    charges and expenses.
+                                </p>
+                                <p class="footer__info-text mr">
+                                    Past performance is not an indicator of future performance. Unless otherwise
+                                    specified, all return
+                                    figures shown above are for illustrative purposes only and are not actual customer
+                                    or model returns.
+                                    Actual returns will vary greatly and depend on personal and market conditions.
+                                </p>
+                                <p class="footer__info-text">
+                                    Simplewealth AG is a Swiss-based advisory service, designed to assist clients in
+                                    achieving discrete
+                                    financial goals. We are not intended to provide comprehensive tax advice or
+                                    financial planning with
+                                    respect to every aspect of a client's financial situation and do not incorporate
+                                    specific investments
+                                    that clients hold elsewhere.
+                                </p>
+                                <p class="footer__info-text mr">
+                                    Investing implies your capital is at risk. The value of your account depends on
+                                    market movements and
+                                    you may get back less than you invest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__container">
+                    <div class="footer__bottom-inner">
+                        <div class="footer__bottom-one">
+                            <p class="footer__bottom-title">
+                                How your assets can grow?
+                            </p>
+                            <p class="footer__bottom-text">
+                                Investing in securities involves risks, and there is always the potential of losing
+                                money when you
+                                invest in securities. Before investing, consider your investment objectives and
+                                Simplewealth AG charges
+                                and expenses.
+                            </p>
+                        </div>
+                        <div class="footer__bottom-two">
+                            <p class="footer__bottom-title">
+                                All your investments are insured. Up to USD 500k
+                            </p>
+                            <p class="footer__bottom-text">
+                                Past performance is not an indicator of future performance. Unless otherwise specified,
+                                all return
+                                figures shown above are for illustrative purposes only and are not actual customer or
+                                model returns.
+                                Actual returns will vary greatly and depend on personal and market conditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div class="modals">
+        <div class="reg regjs disable">
+            <div class="close-icon"></div>
+            <div class="reg__inner">
+                <div class="modal__title">Create your account</div>
+                <form action="#" method="GET" class="reg__form" id="formReg">
+                    <div class="reg__input-outer" id='firstnameO'>
+                        <input required type="text" class="reg__input" id="firstName" name="firstname"
+                            placeholder="Enter your name" data-validate-field="firstnameOne">
+                        <label for="firstName" class="reg__label">First name</label>
+                    </div>
+                    <div class="reg__input-outer" id='lastnameO'>
+                        <input id="lastname" required name="lastname" type="text" class="reg__input"
+                            placeholder="Enter your last name" data-validate-field="lastname">
+                        <label for="lastname" class="reg__label">Last name</label>
+                    </div>
+                    <div class="reg__input-outer" id='emailO'>
+                        <input id='email' required name="email" type="email" class="reg__input"
+                            placeholder="Enter your e-mail"  data-validate-field="email">
+                        <label for="email" class="reg__label">E-mail</label>
+                    </div>
+                    <div class="reg__input-outer" id="passwordO">
+                        <span class="text" id="text"></span>
+                        <input required minlength="6" type="password" name="password" class="reg__input"
+                            placeholder="Minimum 6 characters" id='regPass'  data-validate-field="password">
+                        <label for='regPass' class="reg__label" id='regLabel'>
+                            Create password
+                        </label>
+                        <a href="#" class="eue"><img src="images/modals/eue.svg" alt="eue"></a>
+                    </div>
+                    <div class="reg__check">
+                        <input required type="checkbox" id='ccheckbox' class="reg__checkbox">
+                        <label for="ccheckbox" class="reg__check-label">
+                            I agree with
+                            <a href="#" class="reg__check-label-link">Terms & Conditions</a>
+                            and
+                            <a href="#" class="reg__check-label-link">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button class="reg__button" type="submit">Call to Action </button>
+                    <a href="#" class="reg__regd">Already registered?</a>
+                </form>
+            </div>
+        </div>
+        <div class="thanks disable">
+            <div class="close-icon"></div>
+            <div class="modal__title">
+                Thank you!
+            </div>
+            <div class="thanks__subtitle">
+                Before you can log in, please, confirm your email
+                <span>user@mail.com</span>
+            </div>
+        </div>
+        <div class="log reg disable">
+            <div class="close-icon"></div>
+            <div class="log__inner">
+                <div class="modal__title">Login</div>
+                <form action="#" method="GET" class="reg__form" id="formLog">
+                    <div class="reg__input-outer">
+                        <input required type="email" id="emailTw" name='emailTw' class="reg__input"
+                            placeholder="Enter your e-mail adress" data-validate-field="emailTw">
+                        <label for="emailTw" class="reg__label">E-mail</label>
+                    </div>
+                    <div class="reg__input-outer">
+                        <input required type="password" id="passwordTw" class="reg__input" placeholder="Enter password" name="passwordTw"
+                        data-validate-field="passwordTw">
+                        <label for="passswordTw" class="reg__label">Password</label>
+                    </div>
+                    <button class="reg__button" type="submit">Call to Action </button>
+                    <div class="log__links">
+                        <a href="#" class="log__link restore-link">Restore password </a>
+                        or
+                        <a href="#" class="log__link create-link">Create account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="restore reg disable">
+            <div class="close-icon"></div>
+            <div class="restore__inner">
+                <div class="modal__title">Restore password</div>
+                <form action="#" method="GET" class="form" id="formRes">
+                    <div class="reg__input-outer">
+                        <input name="emailTh" required class="reg__input" type="email" placeholder="Enter your email address" data-validate-field="emailTh" id=emailTh>
+                        <label for="emailTh" class="reg__label">E-mail</label>
+                    </div>
+                    <button class="reg__button" type="submit">Call to Action </button>
+                    <div class="restore__go-back">
+                        <img src="images/modals/arrow-prev.svg" alt="">
+                        Go Back
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="cookie">
+            <div class="cookie__inner">
+                <div class="cookie__left">
+                    <div class="cookie__title">Cookie preferences</div>
+                    <p class="cookie__subtitle">
+                        SW uses cookies to analyze and improve our site. By checking the boxes below, you give a
+                        consent
+                        to install relevant cookies on your device. SW will not place any cookies on your device
+                        (except
+                        necessary cookies) unless you check the boxes. Necessary cookies are always enabled. You can
+                        disable the necessary cookies in your browser settings, but this may affect the
+                        accessibility of
+                        SW site.
+                    </p>
+                </div>
+                <div class="cookie__right">
+                    <button class="cookie__collapse">
+                        Collapse
+                    </button>
+                    <button class="cookie__agree">
+                        Agree and Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="js/cookie.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
